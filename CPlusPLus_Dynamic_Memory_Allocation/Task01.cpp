@@ -16,6 +16,8 @@ using namespace std;
 
 int main() {
 
+
+    //Allocating memory and assigning values
     int * someInt=new int;
     *someInt=20;
 
@@ -25,10 +27,12 @@ int main() {
     string * someStr= new string;
     *someStr="You are welcome!";
 
+    //Print values and addresses
     cout<<*someInt<<" at "<<someInt<<endl;
     cout<<*someChar<<" at "<<someChar<<endl;
     cout<<*someStr<<" at "<<someStr<<endl;
 
+    //Deallocate memory
     delete someInt;
     delete someChar;
     delete someStr;    
