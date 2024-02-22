@@ -21,7 +21,7 @@ int main() {
     ifstream inpF("Task03_test.txt");
     ofstream outF("Task05_result.txt");
 
-    if (inpF.is_open()) {
+    if (inpF.is_open() && outF.is_open()) {
         string line;
         while (getline(inpF,line)) {
             outF<<line<<endl;
@@ -31,7 +31,7 @@ int main() {
         outF.close();
     }
     else {
-        cout<<"Error reading from file!"<<endl;
+        cout<<"Error reading/writing from/to file!"<<endl;
     }
 
     cout<<endl;
