@@ -1,4 +1,4 @@
-// Write a C++ program to count the number of lines in a text file.
+//4. Write a C++ program to count the number of words in a text file.
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -22,7 +22,7 @@ int main()
     if (inpF.is_open())
     {
         string row;
-        while (getline(inpF, row))
+        while (inpF>>row)
         {
             rows++;
         }
