@@ -1,5 +1,7 @@
 // 1. Write a C++ program to implement a class called Circle that has private member variables for radius.
 // Include member functions to calculate the circle's area and circumference.
+
+//this solution doesn't work when modifying the radius value!!!
 #include <iostream>
 #include <string>
 #include <sstream>
